@@ -19,3 +19,5 @@ Not working in case of docker compose scenario - we are always attaching to main
 What npm does is it runs start process behind the scenes, that we cannot attach to using docker attach
 
 docker run -p 8080:80 <image_id>
+
+docker run <image_id> npm run test -- --coverage - so that process closes and Travis can proceed
