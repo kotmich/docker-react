@@ -21,3 +21,5 @@ What npm does is it runs start process behind the scenes, that we cannot attach 
 docker run -p 8080:80 <image_id>
 
 docker run <image_id> npm run test -- --coverage - so that process closes and Travis can proceed
+
+docker-compose -f docker-compose-dev.yml up/down [--build]
